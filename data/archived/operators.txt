@@ -1,0 +1,9 @@
+The mathematical formulation of quantum mechanics (QM) is built upon the concept of an operator.
+
+Physical pure states in quantum mechanics are represented as unit-norm vectors (probabilities are normalized to one) in a special complex Hilbert space. Time evolution in this vector space is given by the application of the evolution operator.
+
+Any observable, i.e., any quantity which can be measured in a physical experiment, should be associated with a self-adjoint linear operator. The operators must yield real eigenvalues, since they are values which may come up as the result of the experiment. Mathematically this means the operators must be Hermitian.[1] The probability of each eigenvalue is related to the projection of the physical state on the subspace related to that eigenvalue. See below for mathematical details about Hermitian operators.
+
+In the wave mechanics formulation of QM, the wavefunction varies with space and time, or equivalently momentum and time (see position and momentum space for details), so observables are differential operators.
+
+In the matrix mechanics formulation, the norm of the physical state should stay fixed, so the evolution operator should be unitary, and the operators can be represented as matrices. Any other symmetry, mapping a physical state into another, should keep this restriction.
