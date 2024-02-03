@@ -4,12 +4,13 @@ from .root import Root
 from .home import HomeView
 from .signin import SignInView
 from .signup import SignUpView
-
+from .editor import EditorView
 
 class Frames(TypedDict):
     signup: SignUpView
     signin: SignInView
     home: HomeView
+    editor: EditorView
 
 
 class View:
@@ -20,6 +21,7 @@ class View:
         self._add_frame(SignUpView, "signup")
         self._add_frame(SignInView, "signin")
         self._add_frame(HomeView, "home")
+        self._add_frame(EditorView, "editor")
 
     def _add_frame(self, Frame, name: str) -> None:
         self.frames[name] = Frame(self.root)
