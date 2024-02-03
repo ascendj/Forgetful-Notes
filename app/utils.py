@@ -32,10 +32,23 @@ def go_back(prev_window, current_window):
 
 def on_close_windows(prev_window, new_window):
     new_window.destroy()
-    prev_window.destroy() 
+    prev_window.quit() 
 
 def fetch_archived_file_names(window, folder_path=archived_folder_path):
     for file in os.listdir(folder_path):
         if file.endswith('.txt'):
-            file_button = tk.Button(window, text=file)
-            file_button.pack()
+            file_button = tk.Button(window, text=file, command=lambda f=file: archived_file_action(f, window))
+            file_button.pack(pady=10)
+
+def archived_file_action(file_name, current_window):
+    file_path = os.path.join(archived_folder_path, file_name)
+
+    with open(file_path, 'r') as file:
+        file_content = file.read()
+
+    create_new_window(file_name, current_window, lambda window: populate_with_file_content(window, file_content))
+
+def populate_with_file_content(window, content):
+    text_widget = tk.Text(window)
+    text_widget.insert(tk.END, content)
+    text_widget.pack(expand=True, fill=tk.BOTH)

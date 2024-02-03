@@ -1,0 +1,29 @@
+Physics, as the science of the structure and dynamics of the physical world, is illequipped to tackle questions of human experience, which necessarily limits its contribution. However, physics is well suited to making careful, precise observations, and making
+these observations in as close to an objective sense as is possible. It is my hope that the
+careful observations of physics may be used as ‘fuel’ for the ongoing debate over the
+nature of time.3
+To make progress in this thesis though, I will have to leave behind these fascinating
+questions of time perception and adopt the pragmatic physical view of time. That is, time
+considered as a numerical parameter that indicates the ordering of events relative to those
+of a ‘reference’ dynamical system4
+that are assumed to be periodic. In this framework,
+the question of the direction of time is approached using the time-reversal transformation
+(T-transformation) which changes the sign of the time parameter, t → −t. Our task is to
+investigate the symmetry of the physical world under this T-transformation.
+It doesn’t take a very sophisticated experiment to discover that the physical world is
+manifestly asymmetric under the T-transformation — dropping a teapot will do. This
+kind of T-symmetry violation, an ‘entropic’ asymmetry, is summed up physically by the
+Second Law of Thermodynamics. Through the work of Maxwell, Boltzmann, Gibbs and
+Lochschmidt in the late 19th century, we now know entropic asymmetry to be a probabilistic feature of systems with a large number of components and highly ordered initial
+states. The observable universe is in a rather ‘unlikely’ state very far from equilibrium,
+and continually moves towards the more probable equilibrium state.5
+There is another, perhaps more fundamental, question concerning the universe’s Tsymmetry. Can we perform an experiment on a system with just one component, perhaps
+a supposedly indivisible component like an electron, that reveals a T-asymmetry of the
+universe ? In terms of an appealing picture: it’s clear we can tell whether a movie of
+a teapot being smashed is being played forward or backward, can we do the same for a
+‘movie’ of a single electron ? It is performing just this sort of experiment that I will focus
+on in this thesis.
+It is often said that observing T-asymmetry in such a fundamental system is evidence
+of the ‘laws of physics’ being T-asymmetric. I think caution should be exercised in taking
+this inferential step. The problem is the usual one, that observation of an asymmetry in
+the behaviour of a system can be attributed to either an asymmetry in the laws governing
