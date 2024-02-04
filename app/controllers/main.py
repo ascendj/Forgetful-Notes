@@ -33,5 +33,4 @@ class Controller:
         # else:
         #     self.view.switch("signin")
         self.view.switch("editor")
-
         self.view.start_mainloop()

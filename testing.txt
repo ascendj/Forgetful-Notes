@@ -1,0 +1,14 @@
+# Testing
+
+Testing involves running the model on seperate test dataset of input/output pairs.
+
+The purpose of testing is to measure its performance, and to see how well it generalises to new data.
+
+**Generalisation** is the degree to which performance in training matches performance in testing.
+
+The degree of generalisation depends on how representative and complete the training data is.
+
+This also depends on the expressiveness of the model:
+
+1. **Underfitting** occurs when the model is too simple to capture the true relationship between input and output, resulting in inaccurate prediction.
+3. **Overfitting** occurs when the model too complex and captures statistical peculiarities in the training data and leads to unusual predictions.
