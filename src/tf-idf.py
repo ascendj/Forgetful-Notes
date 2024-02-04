@@ -58,4 +58,4 @@ def main(document_path, frequency_csv_path, top_n=10):
         print(f"- {word}: {score:.4f}")
 
 if __name__ == "__main__":
-    main('data/entanglement.txt', 'data/unigram_freq.csv', top_n=10)
+    main('data/random_par2.txt', 'data/unigram_freq.csv', top_n=10)
