@@ -4,14 +4,14 @@ class Root(CTk):
     def __init__(self):
         
         super().__init__()
-
+        
         start_width = 1000
         min_width = 400
         start_height = 800
         min_height = 800
 
         self.geometry(f"{start_width}x{start_height}")
-        self.attributes('-fullscreen', True)
+        self.attributes("-zoomed", True)
         self.minsize(width=min_width, height=min_height)
         self.title("Forgetful Notes")
         self.grid_columnconfigure(0, weight=1)

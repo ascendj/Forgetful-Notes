@@ -36,9 +36,12 @@ class EditorView(CTkFrame):
         # self.text_box.grid(row=3, column=1, padx=(20, 0), pady=(20, 20), sticky="nsew")
 
         self.forget_button = CTkButton(text="Start Forgetting", master=self, fg_color="transparent", border_width=2, text_color=("gray10", "#DCE4EE"))
-        self.forget_button.grid(row=3, column=2, padx=(20, 20), pady=(20, 20), sticky="nsew")
+        self.forget_button.grid(row=3, column=1, rowspan=2, padx=(20, 20), pady=(20, 20), sticky="nsew")
 
-        self.textbox = Text(self, font=CTkFont(size=18))
+        self.reveal_button = CTkButton(text="Reveal Differences", master=self, fg_color="transparent", border_width=2, text_color=("gray10", "#DCE4EE"))
+        self.reveal_button.grid(row=3, column=2, rowspan=2, padx=(20, 20), pady=(20, 20), sticky="nsew")
+
+        self.textbox = Text(self, font=CTkFont(size=18), wrap="word")
         self.textbox.grid(row=0, column=1, padx=(20, 0), pady=(20, 20), sticky="nsew")
 
         self.outputbox = HTMLLabel(
@@ -46,8 +49,30 @@ class EditorView(CTkFrame):
             """
             <h1>Forgetful Notes</h1>
             <p>Your notes, misremembered</p>
+            <h2>Getting Started</h2>
+            <ul>
+            <li>To get started, simply start typing in the <strong>source text editor</strong> to the left of this</li>
+            <li>This app supports Markdown, and you can see your notes rendered in real-time on this window</li>
+            </ul>
+            <h2>Not Your Ordinary Note-taking App</h2>
+            <ul>
+            <li>This app can be <strong>forgetful</strong>, and you'll need to remember what you wrote!</li>
+            <li>By filling in forgotten words, you'll encourage active recall and better memorisation of what you write here </li>
+            </ul>
+
+            <em>This startup page disappears when you start typing</em>
+
             """, )
         self.outputbox.grid(row=0, column=2, padx=(20, 20), columnspan=2, pady=(20, 20), sticky="nsew")
+
+        self.settings_frame = CTkFrame(self, fg_color="transparent")
+        self.settings_frame.grid(row=1, column=1, padx=(20, 0), pady=(20, 0), sticky="nsew")
+        self.settings_frame.grid_columnconfigure(0, weight=1)
+        self.settings_frame.grid_rowconfigure(4, weight=1)
+        self.settings_label = CTkLabel(self.settings_frame, text="Forgetfulness Mode", font=CTkFont(size=18))
+        self.settings_label.grid(row=0, column=0, padx=(20, 0), pady=(20, 0), sticky="nsew")
+        self.seg_button = CTkSegmentedButton(self.settings_frame, values=["RAKE NLP", "GPT-3.5 Blanks", "GPT-3.5 Incorrects"])
+        self.seg_button.grid(row=1, column=0, padx=(20, 10), pady=(10, 10), sticky="ew")
 
         # self.grid_columnconfigure(0, weight=1)
         # self.grid_columnconfigure(1, weight=1)
